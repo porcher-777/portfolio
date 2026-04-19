@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Détails - VoIP MITM Attack</title>
+
+    <meta content="Security project demonstrating VoIP man-in-the-middle attack concepts" name="description">
+    <meta content="VoIP, MITM, security, SIP, RTP, network attacks" name="keywords">
+
+    <link href="../assets/img/header-icon.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex flex-column justify-content-center">
+
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i><span>Accueil</span></a></li>
+                <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>A propos</span></a></li>
+                <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a>
+                </li>
+                <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>CV</span></a>
+                </li>
+                <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <div class="page-title" data-aos="fade">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li class="current">VoIP MITM Attack</li>
+                    </ol>
+                </nav>
+
+                <h1>VoIP Security Project | Man-in-the-Middle Attack Simulation</h1>
+            </div>
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details section">
+
+            <div class="container" data-aos="fade-up">
+
+                <div class="portfolio-details-slider swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                    "delay": 8000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                }
+                }
+            </script>
+
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <img src="../assets/img/portfolio/VoIP_attack.png" alt="source">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../assets/img/portfolio-details/scapyattack/dos_wireshark.png" alt="source">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../assets/img/portfolio-details/scapyattack/si_end.png" alt="demo">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../assets/img/portfolio-details/scapyattack/sip_flow.png" alt="demo">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../assets/img/portfolio-details/scapyattack/tls_comm.png" alt="demo">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="row justify-content-between gy-4 mt-4">
+
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <div class="portfolio-description">
+
+
+                            <h2>Description du projet</h2>
+
+                            <h3>Principe</h3>
+                            <p>
+                                Ce projet porte sur l’étude et la simulation de vulnérabilités dans les
+                                communications VoIP,
+                                en particulier les attaques de type Man-in-the-Middle (MITM).
+                                Il s’inscrit dans un contexte de sécurité des réseaux et des protocoles SIP/RTP.
+                            </p>
+
+                            <p>
+                                Une attaque MITM dans un environnement VoIP consiste à s’interposer entre deux
+                                communications
+                                afin d’intercepter, observer ou modifier les flux de signalisation et/ou de médias.
+                                Cela inclut l’eavesdropping, la redirection d’appels ou la modification de
+                                messages SIP.
+                            </p>
+
+                            <p>
+                                Le projet s’appuie sur des concepts documentés dans la recherche en sécurité VoIP :
+                                interception réseau (ex. ARP poisoning), manipulation SIP, et altération du flux
+                                RTP.
+                            </p>
+
+                            <h3>But</h3>
+                            <p>
+                                L’objectif du projet est de comprendre les mécanismes de vulnérabilité des systèmes
+                                VoIP
+                                face aux attaques MITM, en étudiant leur fonctionnement au niveau réseau et
+                                applicatif.
+                            </p>
+
+                            <p>
+                                Plus précisément, le projet vise à illustrer les conséquences possibles d’une
+                                interception de
+                                flux :
+                                écoute des communications, modification de la signalisation, redirection d’appels ou
+                                perturbation
+                                du service.
+                            </p>
+
+                            <p>
+                                Ce travail permet également d’explorer les faiblesses des protocoles non chiffrés et
+                                l’importance
+                                des mécanismes de sécurité comme TLS ou SRTP dans les communications VoIP.
+                            </p>
+
+                            <h3>Finalité</h3>
+                            <p>
+                                Le résultat du projet est une démonstration conceptuelle et technique des risques
+                                liés aux
+                                attaques
+                                MITM dans les systèmes VoIP.
+                            </p>
+
+                            <p>
+                                Il met en évidence les surfaces d’attaque principales :
+                                interception réseau (ARP poisoning), manipulation de SIP, et contrôle du flux RTP.
+                            </p>
+
+                            <p>
+                                Ce projet permet de comprendre comment une compromission réseau peut impacter l’intégrité
+                                et la confidentialité des communications vocales.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="portfolio-info">
+                            <h3>Informations complémentaires</h3>
+
+                            <ul>
+                                <li><strong>Catégorie</strong> Cybersécurité | VoIP | Réseaux</li>
+                                <li><strong>Thème</strong> Man-in-the-Middle (MITM)</li>
+                                <li><strong>Protocoles</strong> SIP, RTP</li>
+
+                                <li><strong>Attaques étudiées</strong></li>
+                                <ul>
+                                    <li>Interception réseau (MITM)</li>
+                                    <li>Manipulation de signalisation SIP</li>
+                                    <li>Altération des flux RTP</li>
+                                    <li>Redirection d’appels</li>
+                                </ul>
+
+                                <li><strong>Concepts sécurité</strong> ARP poisoning, eavesdropping, spoofing</li>
+
+                                <li><strong>Finalité</strong> Étude et démonstration des vulnérabilités VoIP</li>
+
+                                <li>
+                                    <a href="https://github.com/porcher-777/VoIP-MITM-Attack"
+                                        class="btn-visit align-self-start">
+                                        Voir le dépôt GitHub
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+
+        <div class="container">
+            <h3 class="sitename">Portfolio</h3>
+            <p>Projet de cybersécurité VoIP - analyse des attaques MITM.</p>
+
+            <div class="social-links d-flex justify-content-center">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+
+            <div class="copyright">
+                <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong>
+                <span>All Rights Reserved</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <div id="preloader"></div>
+
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

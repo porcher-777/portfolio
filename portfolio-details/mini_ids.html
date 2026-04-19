@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Détails - Détection d'intrusions SQL Injection</title>
+
+    <meta content="Projet IA de détection d’injections SQL déployé sur Raspberry Pi avec dataset dédié" name="description">
+    <meta content="cybersécurité, machine learning, SQL injection, Raspberry Pi, python, dataset" name="keywords">
+
+    <link href="../assets/img/header-icon.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+<header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i><span>Accueil</span></a></li>
+            <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>A propos</span></a></li>
+            <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+            <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>CV</span></a></li>
+            <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="main">
+
+<div class="page-title" data-aos="fade">
+    <div class="container">
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="current">Détection d'intrusions SQL Injection</li>
+            </ol>
+        </nav>
+
+        <h1>Détection d'intrusions | IA pour injections SQL sur Raspberry Pi</h1>
+    </div>
+</div>
+
+<section id="portfolio-details" class="portfolio-details section">
+
+<div class="container" data-aos="fade-up">
+
+    <div class="portfolio-details-slider swiper init-swiper">
+        <img src="../assets/img/portfolio/schema_archi_ids.png" alt="SQL Injection Intrusion Detection System">
+    </div>
+
+    <div class="row justify-content-between gy-4 mt-4">
+
+        <div class="col-lg-8" data-aos="fade-up">
+
+            <div class="portfolio-description">
+
+                <h2>Description du projet</h2>
+
+                <h3>Contexte</h3>
+                <p>
+                    Ce projet porte sur la détection d’intrusions dans un contexte de cybersécurité, plus précisément
+                    sur l’identification des attaques par injection SQL ciblant des applications web.
+                </p>
+
+                <p>
+                    L’objectif est de développer une solution basée sur l’intelligence artificielle capable de détecter
+                    en temps réel des tentatives d’exploitation SQL, afin de renforcer la sécurité des systèmes
+                    d’information.
+                </p>
+
+                <h3>Principe</h3>
+                <p>
+                    La solution repose sur l’exploitation d’un dataset nommé <strong>sql-injection-dataset.csv</strong>,
+                    contenant des exemples de requêtes légitimes et malveillantes.
+                </p>
+
+                <p>
+                    Un modèle de machine learning est entraîné afin de classifier les requêtes et détecter les comportements suspects.
+                    Le choix du modèle privilégie un compromis entre performance et légèreté afin de permettre un déploiement embarqué.
+                </p>
+
+                <p>
+                    Le système est conçu pour fonctionner sur un Raspberry Pi, utilisé comme dispositif de protection réseau
+                    (“security shield”) intégré à l’infrastructure existante.
+                </p>
+
+                <h3>Méthodologie</h3>
+                <p>
+                    Le développement s’articule autour des étapes suivantes :
+                </p>
+
+                <ul>
+                    <li>Analyse et préparation du dataset</li>
+                    <li>Choix et entraînement d’un modèle d’IA adapté</li>
+                    <li>Optimisation pour un déploiement sur matériel embarqué</li>
+                    <li>Tests sur environnement réel ou simulé</li>
+                </ul>
+
+                <p>
+                    L’environnement Python (notamment via notebook) est utilisé pour accélérer l’expérimentation et l’itération.
+                </p>
+
+                <h3>Contraintes</h3>
+                <p>
+                    Le projet impose des contraintes fortes :
+                </p>
+
+                <ul>
+                    <li>Modèle léger pour exécution sur Raspberry Pi</li>
+                    <li>Détection en quasi temps réel</li>
+                    <li>Déploiement rapide dans un contexte de démonstration</li>
+                </ul>
+
+                <h3>Finalité</h3>
+                <p>
+                    Le projet aboutit à un prototype fonctionnel démontrant la faisabilité d’un système de détection
+                    d’intrusions basé sur l’IA, capable d’être intégré dans une infrastructure réseau existante.
+                </p>
+
+                <p>
+                    Il s’inscrit dans une démarche de cybersécurité proactive visant à réduire les risques liés aux attaques
+                    par injection SQL et à améliorer la résilience des applications web.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="portfolio-info">
+                <h3>Informations complémentaires</h3>
+
+                <ul>
+                    <li><strong>Type</strong> Mini-projet cybersécurité</li>
+                    <li><strong>Domaine</strong> Détection d'intrusions</li>
+                    <li><strong>Technologie principale</strong> Python</li>
+                    <li><strong>Approche</strong> Machine Learning</li>
+
+                    <li><strong>Concepts</strong></li>
+                    <ul>
+                        <li>Cybersecurity / IDS</li>
+                        <li>SQL Injection detection</li>
+                        <li>Classification supervisée</li>
+                        <li>Edge computing</li>
+                        <li>IA embarquée</li>
+                    </ul>
+
+                    <li><strong>Environnement</strong></li>
+                    <ul>
+                        <li>Jupyter Notebook</li>
+                        <li>Python</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+
+                    <li><strong>Données</strong> sql-injection-dataset.csv</li>
+                    <li><strong>Déploiement</strong> Raspberry Pi (shield réseau)</li>
+
+                    <li><strong>Objectif</strong> Détection en temps réel des attaques SQLi</li>
+
+                    <li>
+                        <a href="https://github.com/porcher-777/Mini_projet_IDS"
+                           class="btn-visit align-self-start">
+                           Voir le dépôt GitHub
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer id="footer" class="footer position-relative light-background">
+
+<div class="container">
+    <h3 class="sitename">Portfolio</h3>
+    <p>Projet de cybersécurité - détection d’intrusions par intelligence artificielle.</p>
+
+    <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="copyright">
+        <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong>
+        <span>All Rights Reserved</span>
+    </div>
+</div>
+
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<div id="preloader"></div>
+
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

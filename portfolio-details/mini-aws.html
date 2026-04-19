@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Portfolio Détails - F20GP Game Prototype</title>
+    <title>Portfolio Détails - AWS Infrastructure Generator</title>
 
-    <meta content="Unity 3D game prototype with physics, crowd simulation and AI logic" name="description">
-    <meta content="Unity, game development, physics, AI, pathfinding, crowd simulation" name="keywords">
+    <meta content="Python tool to automatically deploy AWS infrastructure from JSON specification" name="description">
+    <meta content="AWS, Python, boto3, infrastructure as code, cloud computing" name="keywords">
 
     <link href="../assets/img/header-icon.png" rel="icon">
 
@@ -49,11 +49,11 @@
         <nav class="breadcrumbs">
             <ol>
                 <li><a href="../index.html">Accueil</a></li>
-                <li class="current">Unity Game Prototype (F20GP)</li>
+                <li class="current">AWS Infrastructure Generator</li>
             </ol>
         </nav>
 
-        <h1>Jeu de course 3D avec Unity</h1>
+        <h1>AWS Infrastructure as Code | Génération automatique via JSON</h1>
     </div>
 </div>
 
@@ -62,7 +62,7 @@
 <div class="container" data-aos="fade-up">
 
     <div class="portfolio-details-slider swiper init-swiper">
-        <img src="../assets/img/portfolio/Unity_game.png" alt="Unity game prototype">
+        <img src="../assets/img/portfolio/schema_archi_aws.png" alt="AWS infrastructure project">
     </div>
 
     <div class="row justify-content-between gy-4 mt-4">
@@ -75,45 +75,59 @@
 
                 <h3>Principe</h3>
                 <p>
-                    Ce projet est un prototype technique développé sous Unity dans le cadre du module "Games Programming" suivi lors de mon échange universitaire.
-                    Il consiste en un niveau 3D unique intégrant des mécaniques de gameplay basées sur la physique,
-                    l’intelligence artificielle et la simulation de foule.
+                    Ce projet consiste à concevoir un outil en Python capable de générer automatiquement
+                    une infrastructure réseau complète sur AWS à partir d’un fichier de configuration JSON.
+                </p>
+
+                <p>
+                    L’idée centrale est de permettre à un utilisateur de décrire une architecture cloud
+                    de manière déclarative, via une structure JSON claire et hiérarchisée,
+                    puis de déployer cette infrastructure sans intervention manuelle.
+                </p>
+
+                <p>
+                    Le fichier JSON définit les composants essentiels d’un environnement AWS :
+                    VPC, sous-réseaux publics et privés, passerelles Internet et NAT,
+                    tables de routage, groupes de sécurité, NACLs et instances EC2.
+                </p>
+
+                <p>
+                    Le script Python lit cette spécification et crée les ressources en respectant
+                    leurs dépendances logiques, en s’appuyant sur la bibliothèque boto3,
+                    SDK officiel AWS pour Python.
                 </p>
 
                 <h3>But</h3>
                 <p>
-                    L’objectif du projet est de démontrer la capacité à concevoir un système de jeu complet intégrant
-                    des mécaniques fondamentales du game development.
+                    L’objectif du projet est d’automatiser le déploiement d’infrastructures cloud
+                    afin de réduire les erreurs humaines et améliorer la reproductibilité.
                 </p>
 
                 <p>
-                    Cela inclut :
-                    la gestion des interactions physiques (forces, collisions),
-                    la mise en place d’une simulation de foule d’au moins une douzaine d’entités,
-                    l’implémentation d’une logique de comportement des agents,
-                    et la définition de conditions de victoire et de défaite.
+                    Il s’agit également de :
                 </p>
 
+                <ul>
+                    <li>Concevoir un format JSON structuré et cohérent</li>
+                    <li>Gérer les dépendances entre ressources AWS</li>
+                    <li>Implémenter un déploiement automatisé fiable</li>
+                    <li>Faciliter la création et la suppression d’environnements</li>
+                </ul>
+
                 <p>
-                    Le projet permet également d’expérimenter la conception de level design 3D et la structuration
-                    d’un gameplay simple mais fonctionnel.
+                    Le projet s’inscrit dans une approche Infrastructure as Code (IaC),
+                    où l’infrastructure est définie et versionnée comme du code.
                 </p>
 
                 <h3>Finalité</h3>
                 <p>
-                    Le résultat final est un prototype jouable démontrant l’interaction entre physique, IA et logique
-                    de jeu dans un environnement 3D Unity.
+                    Le projet aboutit à un outil fonctionnel permettant de déployer
+                    une infrastructure AWS complète à partir d’un simple fichier JSON.
                 </p>
 
                 <p>
-                    Il illustre la maîtrise des composants techniques suivants :
-                    rigidbody physics, crowd simulation, pathfinding / FSM, et game state management
-                    (win / lose conditions).
-                </p>
-
-                <p>
-                    Ce projet constitue une démonstration de compétences en développement de jeu vidéo,
-                    en particulier sur la coordination de systèmes interactifs complexes dans un environnement temps réel.
+                    Il constitue une première approche concrète des pratiques DevOps,
+                    en particulier l’automatisation du provisioning d’infrastructure.
                 </p>
 
             </div>
@@ -125,24 +139,33 @@
                 <h3>Informations complémentaires</h3>
 
                 <ul>
-                    <li><strong>Module</strong> F20GP - Technical Prototype</li>
-                    <li><strong>Engine</strong> Unity (LTS)</li>
-                    <li><strong>Type</strong> 3D Game Prototype</li>
+                    <li><strong>Type</strong> Mini-projet académique</li>
+                    <li><strong>Technologie principale</strong> Python</li>
+                    <li><strong>SDK</strong> boto3 (AWS)</li>
 
-                    <li><strong>Core Components</strong></li>
+                    <li><strong>Concepts</strong></li>
                     <ul>
-                        <li>Rigid body physics (forces, collisions)</li>
-                        <li>Crowd simulation (12+ agents)</li>
-                        <li>AI logic (FSM / pathfinding)</li>
-                        <li>Win / lose conditions</li>
+                        <li>Infrastructure as Code</li>
+                        <li>Automatisation cloud</li>
+                        <li>Gestion des dépendances</li>
+                        <li>Déploiement AWS</li>
                     </ul>
 
-                    <li><strong>Design Focus</strong> Interaction systems + level design</li>
+                    <li><strong>Ressources AWS</strong></li>
+                    <ul>
+                        <li>VPC</li>
+                        <li>Subnets (public / privé)</li>
+                        <li>Internet Gateway / NAT</li>
+                        <li>Routing tables</li>
+                        <li>Security Groups & NACLs</li>
+                        <li>Instances EC2</li>
+                    </ul>
 
-                    <li><strong>Constraints</strong> No visual scripting, no pathfinding plugins</li>
+                    <li><strong>Entrée principale</strong> Fichier JSON de configuration</li>
+                    <li><strong>Scripts</strong> deploy.py (et option destroy)</li>
 
                     <li>
-                        <a href="https://github.com/porcher-777/game-project"
+                        <a href="https://github.com/porcher-777/Mini_projet_AWS"
                            class="btn-visit align-self-start">
                            Voir le dépôt GitHub
                         </a>
@@ -165,7 +188,7 @@
 
 <div class="container">
     <h3 class="sitename">Portfolio</h3>
-    <p>Unity technical prototype – game development coursework.</p>
+    <p>Projet cloud - automatisation d’infrastructure AWS.</p>
 
     <div class="social-links d-flex justify-content-center">
         <a href="#"><i class="bi bi-linkedin"></i></a>
